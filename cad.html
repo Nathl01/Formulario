@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link href="cad.css" rel="stylesheet">
+</head>
+<body>
+  <div class="box">
+    <form id="form">
+      <fieldset>
+        <legend><b>Formulário</b></legend>
+        <br>
+        <div class="inputBox">
+        <input type="text" name="nome" id="nome" class="inputUser" required>
+        <label for="nome" class="labelInput">Nome do produto</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+        <input type="text" name="descricao" id="descricao" class="inputUser" required>
+        <label for="descricao" class="labelInput">Descrição do produto</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+        <input type="number" step="any" name="valor" id="valor" class="inputUser" required>
+        <label for="valor" class="labelInput">Valor do produto</label>
+        </div>
+        <br>
+
+        <p>Disponível para venda:</p>
+        <input type="radio" id="s" name="disp" value="s" required>
+        <label for="s">Sim</label>
+        <input type="radio" id="n" name="disp" value="n" required>
+        <label for="n">Não</label>
+        <br><br><br>
+
+        <button onclick="produto.cadastrar()" id="submit">Cadastrar produto</button> 
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
